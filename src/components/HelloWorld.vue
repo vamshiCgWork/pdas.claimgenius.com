@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <Hell />
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -103,10 +104,16 @@
 </template>
 
 <script>
+//import Hell from "../main";
+import Hell from "../../../pdas-ui-components/src/components/Hell.vue";
+//import Hell from "../../../pdas-ui-components/src/components/Hell.vue";
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  components: {
+    Hell,
   },
 };
 </script>
